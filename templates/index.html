@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Gorakh Capital - Financial Consultant</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap-5.0.0-alpha-2.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/LineIcons.2.0.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/lindy-uikit.css' %}" />
+    <style>
+      .alert{
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        z-index: 999;
+      }
+      .hidden{
+        display: none;
+        transition: 1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please Download latest browser.
+        
+      </p>
+    <![endif]-->
+
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left">
+                <div class="spinner-circle"></div>
+              </div>
+              <div class="spinner-right">
+                <div class="spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================= preloader end ========================= -->
+
+    <!-- ========================= hero-section-wrapper-2 start ========================= -->
+    <section id="home" class="hero-section-wrapper-2">
+
+      <!-- ========================= header-2 start ========================= -->
+      <header class="header header-2">
+        <div class="navbar-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'assets/img/logo/gc-logo.png' %}" style="height: 50px;" alt="Logo"  />
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent2">
+                    <ul id="nav2" class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="page-scroll active" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#about">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#services">Services</a>
+                      </li>
+                      <!--
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#pricing">Pricing</a>
+                      </li>
+                      -->
+                      <li class="nav-item">
+                        <a class="page-scroll" href="#contact">Contact Us</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="button button-sm radius-10 d-none d-lg-flex">Get Started</a>
+                  </div>
+                  <!-- navbar collapse -->
+                </nav>
+                <!-- navbar -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- navbar area -->
+      </header>
+      <!-- ========================= header-2 end ========================= -->
+
+      <!-- ========================= hero-2 start ========================= -->
+      {% if data %}
+        <div class="container">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Thanks {{ data.full_name }} for contacting us.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+      {% endif %}
+  
+      <div class="hero-section hero-style-2">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-lg-6">
+              <div class="hero-content-wrapper">
+                {% comment %} <h4 class="wow fadeInUp" data-wow-delay=".2s">You're Using</h4> {% endcomment %}
+                <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">Beyond a first impression</h2>
+                <p class="mb-50 wow fadeInUp" data-wow-delay=".6s">Develop your competitive advantage through financial potential and engagement in transformational times.</p>
+                <div class="buttons">
+                  <a href="#" rel="nofollow" target="blank" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".7s">Get Started</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-image">
+                <img src="{% static 'assets/img/hero/hero-2/hero-img.svg' %}" alt="" class="wow fadeInRight" data-wow-delay=".2s">
+                <img src="{% static 'assets/img/hero/hero-2/paattern.svg' %}" alt="" class="shape shape-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========================= hero-2 end ========================= -->
+    </section>
+    <!-- ========================= hero-section-wrapper-2 end ========================= -->
+
+    <!-- ========================= about style-3 start ========================= -->
+    <section id="about" class="about-section about-style-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-image wow fadeInLeft" data-wow-delay=".2s">
+              <img src="{% static 'assets/img/about/about-3/about-img.jpg' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content-wrapper">
+              <div class="section-title mb-40">
+                <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Want to know Gorakh Capital?</h3>
+                <ul>
+                  <li>  
+                    <i class="lni lni-checkmark-circle" data-wow-delay=".4s"></i> 
+                    Gorakh Capital is an emerging capitalized pecuniary commerce specializing in strategic financial capital services, extending investment consultancy, and providing a mentorship platform to entrepreneurs. Our knowledge-based approach strengthens business performance, enhances strategic alignment, and sharpens value-added focus and efficiency within enterprises in the influential times.
+                  </li>
+                  <br />
+                  <li>  
+                    <i class="lni lni-checkmark-circle" data-wow-delay=".4s"></i> 
+                    We offer a unique combination of financial advisory services and the newest business tools on individual, team, and organizational levels to optimize our clients’ organizational output. Our state-of-art professional services also include mentorship in forex and commodities of gold, silver, crude oil, and currencies. Our mission is to lead the development of integrated financial capital services through knowledge, experience, and innovation in times of digitalization.
+                  </li>
+                  <br />
+                  <li>  
+                    <i class="lni lni-checkmark-circle" data-wow-delay=".4s"></i> 
+                    Gorakh Capital uses sophisticated and tailored processes to support our clients’ operations in business transformation. Our core competencies include the financial capital transformation of development, Acquisition, and due diligence.
+                  </li>
+                </ul>
+               </div>
+              <a href="#0" class="button button-lg radius-3 wow fadeInUp" data-wow-delay=".7s">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+
+		<!-- ========================= Services Section Start ========================= -->
+		<section id="services" class="pricing-style-1 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10">
+            <div class="section-title text-center mb-60">
+              <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Our Services</h3>
+              <p class="wow fadeInUp" data-wow-delay=".4s">Gorakh Capital is committed to providing a wide range of services by providing mentorship, market analysis, product reviews, and monetary gossips with high-quality dealing to clients. Investigating the marketplace and propose the most suitable products and services accessible, guarantee that clients are attentive to goods that best assemble their requirements, and then protecting a transaction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-8 col-sm-10">
+            <div class="single-pricing wow fadeInUp" data-wow-delay=".2s">
+              <div class="image">
+                <img src="{% static 'assets/img/pricing/pricing-1/pricing-1.svg' %}" alt="">
+              </div>
+              <h4>Advisory Services</h4>
+              {% comment %} <h3>$ 29.00</h3> {% endcomment %}
+              <ul>
+                <li style="line-height: 1.4"> 
+                  Advisory Services is an extensive activity that helps you in setting up your future. Gorakh Capital will let you evaluate your financial goals, manage economic assessment, appraise your contingency profile, and broaden an economic strategy to pursue your monetary desires.
+                </li>
+              </ul>
+              <a href="#0" class="button radius-30">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-10">
+            <div class="single-pricing wow fadeInUp" data-wow-delay=".4s">
+              <span class="button button-sm radius-30 popular-badge">Popular</span>
+              <div class="image">
+                <img src="{% static 'assets/img/pricing/pricing-1/pricing-2.svg' %}" alt="">
+              </div>
+              <h4>Capital Planning</h4>
+              {% comment %} <h3>$ 89.00</h3> {% endcomment %}
+              <ul>
+                <li  style="line-height: 1.4"> 
+                  Pursuing the proper settlements at the right time is an odd venture for most of the stakeholders. Gorakh Capital facilitates the restructuring procedure by way of very well assessing your financial state of affairs and determining how your belongings ought to fix a number of the prime...
+                </li>
+                
+              </ul>
+              <a href="#0" class="button radius-30">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-10">
+            <div class="single-pricing wow fadeInUp" data-wow-delay=".6s">
+              <div class="image">
+                <img src="{% static 'assets/img/pricing/pricing-1/pricing-3.svg' %}" alt="">
+              </div>
+              <h4>Capital Management</h4>
+              {% comment %} <h3>$ 199.00</h3> {% endcomment %}
+              <ul>
+                <li  style="line-height: 1.4"> 
+                  Capital Management is a desegregated method for managing your investment. It is planned for organizing, developing, and protecting your assets. Gorakh Capital approaches numerous monetary...
+                </li>
+              </ul>
+              <a href="#0" class="button radius-30">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================= contact style-6 start ========================= -->
+    <section id="contact" class="contact-section contact-style-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="contact-form-wrapper">
+              <form action="/" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Full Name">
+                      <i class="lni lni-user"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" class="form-input" placeholder="Email">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single-input">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject">
+                      <i class="lni lni-text-format"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single-input">
+                      <label for="message">Message</label>
+                      <textarea name="message" id="message" class="form-input" placeholder="Message" rows="6"></textarea>
+                      <i class="lni lni-comments-alt"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-button">
+                      <button type="submit" class="button radius-10">Submit <i class="lni lni-telegram-original"></i> </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-first order-lg-last">
+            <div class="left-wrapper">
+              <div class="section-title mb-40">
+                <h3 class="mb-15">Get in touch</h3>
+                <p>Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-phone"></i>
+                    </div>
+                    <div class="text">
+                      <p>+92334-1217336</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                    <div class="text">
+                      <p>info@gorakhcapital.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                  <div class="single-item">
+                    <div class="icon">
+                      <i class="lni lni-map-marker"></i>
+                    </div>
+                    <div class="text">
+                      <p>Qasimabad Hyderabad, Sindh Pakistan</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================= contact style-6 end ========================= -->
+
+
+		<!-- ========================= footer style-1 start ========================= -->
+    <footer class="footer footer-style-1">
+      <div class="container">
+        <div class="widget-wrapper">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+                <div class="logo">
+                  <a href="#"> <img src="{% static 'assets/img/logo/gc-logo.png' %}" style="height: 80px;" alt=""> </a>
+                </div>
+                <p class="desc">To be the leading capital consultancy company, assembling the fiscal targets of our patrons via money management solutions, directed by our trusted financial experts.</p>
+                <ul class="socials">
+                  <li> <a href="https://facebook.com/gorakhcapital"> <i class="lni lni-facebook-filled"></i> </a> </li>
+                  <li> <a href="https://twitter.com/gorakhcapital"> <i class="lni lni-twitter-filled"></i> </a> </li>
+                  <li> <a href="https://instagram.com/gorakhcapital"> <i class="lni lni-instagram-filled"></i> </a> </li>
+                  <li> <a href="https://linkedin.com/in/gorakhcapital"> <i class="lni lni-linkedin-original"></i> </a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
+                <h6>Quick Link</h6>
+                <ul class="links">
+                  <li> <a href="#home">Home</a> </li>
+                  <li> <a href="#about">About</a> </li>
+                  <li> <a href="#services">Service</a> </li>
+                  <li> <a href="#contact">Contact</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+                <h6>Services</h6>
+                <ul class="links">
+                  <li> <a href="#0">Advisory Services</a> </li>
+                  <li> <a href="#0">Capital Planning</a> </li>
+                  <li> <a href="#0">Capital Management</a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
+                <h6>Help & Support</h6>
+                <ul class="links">
+                  <li> <a href="#0">Support Center</a> </li>
+                  <li> <a href="#0">Live Chat</a> </li>
+                  <li> <a href="#0">FAQ</a> </li>
+                  <li> <a href="#0">Terms & Conditions</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
+        </div>
+      </div>
+    </footer>
+    <!-- ========================= footer style-1 end ========================= -->
+
+    <!-- ========================= scroll-top start ========================= -->
+    <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+    <!-- ========================= scroll-top end ========================= -->
+		
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{% static 'assets/js/bootstrap.5.0.0.alpha-2-min.js' %}"></script>
+    <script src="{% static 'assets/js/count-up.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script>
+      document.querySelector('.btn-close').addEventListener('click', function(){
+        document.querySelector('.alert-dismissible').classList.add('hidden')
+      })
+    </script>
+  </body>
+</html>
